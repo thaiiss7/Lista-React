@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(255, 241, 243);
+}
+
+.temporizador {
+  width: 600px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.container {
+  width: 550px;
+  height: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+p {
+  font-size: xx-large;
+}
+
+button {
+  height: 50px;
+  width: 150px;
+  margin: 20px;
+}
+
+.message {
+  display: none;
+  font-size: x-large;
+}
