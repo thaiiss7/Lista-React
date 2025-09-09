@@ -12,16 +12,22 @@ function App() {
     let index = 0
 
     const interval = setInterval(() => {
-      
-    })
+      index = (index + 1) % colors.length
+      setColor(colors[index])
+    }, 1000)
+    
+    return () => clearInterval(interval)
   }, [])
 
   return (
     <>
       <div className='body'>
         <h1>pisca pisca</h1>
-        <div className='blue'></div>
-        <div className='red'></div>
+        <div className='square'
+        style = {{
+          backgroundColor: color,
+          transition: "background-color 0.5s ease"
+        }}></div>
       </div>
     </>
   )
