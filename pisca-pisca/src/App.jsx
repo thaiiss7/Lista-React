@@ -5,12 +5,16 @@ import './App.css'
 import { useEffect } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [color, setColor] = useState("rgb(169, 196, 255)")
 
   useEffect(() => {
-    console.log(`O contador agora está em ${count}`)
-    document.title = `Contador: ${count}`
-  }, [count])
+    const colors = ["rgb(204, 144, 144)","rgb(169, 196, 255)"]
+    let index = 0
+
+    const interval = setInterval(() => {
+      
+    })
+  }, [])
 
   return (
     <>
